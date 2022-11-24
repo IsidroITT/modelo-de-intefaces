@@ -16,6 +16,8 @@ public class ConfirmarcionRegistro_imprimirActa extends javax.swing.JFrame {
      */
     public ConfirmarcionRegistro_imprimirActa() {
         initComponents();
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -34,6 +36,11 @@ public class ConfirmarcionRegistro_imprimirActa extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnCancelarRegstro.setText("Cancelar");
+        btnCancelarRegstro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarRegstroActionPerformed(evt);
+            }
+        });
 
         btnImprimirActa.setText("Imprimir Acta");
 
@@ -68,6 +75,12 @@ public class ConfirmarcionRegistro_imprimirActa extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCancelarRegstroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarRegstroActionPerformed
+        PantallaPrincipalEmpleado pantallaEmpleado = new PantallaPrincipalEmpleado();
+        pantallaEmpleado.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnCancelarRegstroActionPerformed
 
     /**
      * @param args the command line arguments
