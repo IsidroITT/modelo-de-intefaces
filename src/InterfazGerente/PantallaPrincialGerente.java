@@ -18,7 +18,7 @@ public class PantallaPrincialGerente extends javax.swing.JFrame {
      */
     public PantallaPrincialGerente() {
         initComponents();
-         this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null);
         this.setResizable(false);
     }
 
@@ -33,6 +33,12 @@ public class PantallaPrincialGerente extends javax.swing.JFrame {
 
         lblPIGerente = new javax.swing.JLabel();
         btnCerraGerente = new javax.swing.JButton();
+        btnRegistroEmpleado = new javax.swing.JButton();
+        btnSeguimientoPagos = new javax.swing.JButton();
+        btnEstudioSE = new javax.swing.JButton();
+        btnBajaPaciente = new javax.swing.JButton();
+        btnAgendaGeneral = new javax.swing.JButton();
+        btnEditarPaciente = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,6 +51,48 @@ public class PantallaPrincialGerente extends javax.swing.JFrame {
             }
         });
 
+        btnRegistroEmpleado.setText("Registrar empleado");
+        btnRegistroEmpleado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistroEmpleadoActionPerformed(evt);
+            }
+        });
+
+        btnSeguimientoPagos.setText("Seguimiento de pagos");
+        btnSeguimientoPagos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSeguimientoPagosActionPerformed(evt);
+            }
+        });
+
+        btnEstudioSE.setText("Estudio socio-economico");
+        btnEstudioSE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEstudioSEActionPerformed(evt);
+            }
+        });
+
+        btnBajaPaciente.setText("Baja paciente");
+        btnBajaPaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBajaPacienteActionPerformed(evt);
+            }
+        });
+
+        btnAgendaGeneral.setText("Agenda general");
+        btnAgendaGeneral.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAgendaGeneralActionPerformed(evt);
+            }
+        });
+
+        btnEditarPaciente.setText("Editar paciente");
+        btnEditarPaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditarPacienteActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -52,21 +100,48 @@ public class PantallaPrincialGerente extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addComponent(lblPIGerente))
+                        .addContainerGap()
+                        .addComponent(btnCerraGerente))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(120, 120, 120)
-                        .addComponent(btnCerraGerente)))
-                .addContainerGap(95, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(53, 53, 53)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(btnAgendaGeneral, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnRegistroEmpleado, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(btnEstudioSE, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btnSeguimientoPagos, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE)
+                            .addComponent(btnBajaPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnEditarPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(134, 134, 134)
+                        .addComponent(lblPIGerente)))
+                .addContainerGap(74, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(148, Short.MAX_VALUE)
+                .addGap(34, 34, 34)
                 .addComponent(lblPIGerente)
-                .addGap(57, 57, 57)
+                .addGap(40, 40, 40)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnRegistroEmpleado)
+                    .addComponent(btnSeguimientoPagos))
+                .addGap(28, 28, 28)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnAgendaGeneral)
+                    .addComponent(btnBajaPaciente))
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnEditarPaciente)
+                    .addComponent(btnEstudioSE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addComponent(btnCerraGerente)
-                .addGap(51, 51, 51))
+                .addContainerGap())
         );
 
         pack();
@@ -77,6 +152,42 @@ public class PantallaPrincialGerente extends javax.swing.JFrame {
         log.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnCerraGerenteActionPerformed
+
+    private void btnRegistroEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroEmpleadoActionPerformed
+        RegistroEmpleado registroEmpleado = new RegistroEmpleado();
+        registroEmpleado.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnRegistroEmpleadoActionPerformed
+
+    private void btnSeguimientoPagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeguimientoPagosActionPerformed
+        SeguimientoPagos seguimientoPagos = new SeguimientoPagos();
+        seguimientoPagos.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnSeguimientoPagosActionPerformed
+
+    private void btnAgendaGeneralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgendaGeneralActionPerformed
+        AgendaGeneral agendaGeneral = new AgendaGeneral();
+        agendaGeneral.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnAgendaGeneralActionPerformed
+
+    private void btnBajaPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBajaPacienteActionPerformed
+        BajaPaciente bajaPaciente = new BajaPaciente();
+        bajaPaciente.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnBajaPacienteActionPerformed
+
+    private void btnEstudioSEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstudioSEActionPerformed
+        EstudioSE estudioSE = new EstudioSE();
+        estudioSE.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnEstudioSEActionPerformed
+
+    private void btnEditarPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarPacienteActionPerformed
+        EditarPaciente editarPaciente = new EditarPaciente();
+        editarPaciente.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnEditarPacienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -114,7 +225,13 @@ public class PantallaPrincialGerente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAgendaGeneral;
+    private javax.swing.JButton btnBajaPaciente;
     private javax.swing.JButton btnCerraGerente;
+    private javax.swing.JButton btnEditarPaciente;
+    private javax.swing.JButton btnEstudioSE;
+    private javax.swing.JButton btnRegistroEmpleado;
+    private javax.swing.JButton btnSeguimientoPagos;
     private javax.swing.JLabel lblPIGerente;
     // End of variables declaration//GEN-END:variables
 }
