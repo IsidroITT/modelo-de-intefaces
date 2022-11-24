@@ -106,7 +106,7 @@ public class PantallaPrincipalEmpleado extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCerrarEmpleadoActionPerformed
 
     private void btnRegistroPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroPacienteActionPerformed
-        ConfirmarcionRegistro_imprimirActa registroPaciente = new ConfirmarcionRegistro_imprimirActa();
+        RegistroPaciente registroPaciente = new RegistroPaciente();
         registroPaciente.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnRegistroPacienteActionPerformed

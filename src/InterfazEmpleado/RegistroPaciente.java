@@ -16,6 +16,8 @@ public class RegistroPaciente extends javax.swing.JFrame {
      */
     public RegistroPaciente() {
         initComponents();
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -38,6 +40,11 @@ public class RegistroPaciente extends javax.swing.JFrame {
         btnRegrsar.setText("Regresar");
 
         btnRegistroFamiliar.setText("Datos Familiar");
+        btnRegistroFamiliar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistroFamiliarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -68,6 +75,12 @@ public class RegistroPaciente extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnRegistroFamiliarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroFamiliarActionPerformed
+        DatosFamiliaresPaciente datosFamiliares = new DatosFamiliaresPaciente();
+        datosFamiliares.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnRegistroFamiliarActionPerformed
 
     /**
      * @param args the command line arguments

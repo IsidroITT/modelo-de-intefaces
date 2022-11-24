@@ -15,6 +15,8 @@ public class DatosFamiliaresPaciente extends javax.swing.JFrame {
      */
     public DatosFamiliaresPaciente() {
         initComponents();
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -28,8 +30,8 @@ public class DatosFamiliaresPaciente extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnRegresar = new javax.swing.JButton();
+        btnPantallaImprimir = new javax.swing.JButton();
 
         jLabel1.setText("jLabel1");
 
@@ -37,12 +39,17 @@ public class DatosFamiliaresPaciente extends javax.swing.JFrame {
 
         jLabel2.setText("Pantalla regsitro datos de los familiares del paciente");
 
-        jButton1.setText("Regresar");
-
-        jButton2.setText("Imprimir acta");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnRegresar.setText("Regresar");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnRegresarActionPerformed(evt);
+            }
+        });
+
+        btnPantallaImprimir.setText("Ir a imprimir acta");
+        btnPantallaImprimir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPantallaImprimirActionPerformed(evt);
             }
         });
 
@@ -56,9 +63,9 @@ public class DatosFamiliaresPaciente extends javax.swing.JFrame {
                 .addGap(30, 30, 30))
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(jButton1)
+                .addComponent(btnRegresar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
+                .addComponent(btnPantallaImprimir)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -68,17 +75,25 @@ public class DatosFamiliaresPaciente extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 188, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(btnRegresar)
+                    .addComponent(btnPantallaImprimir))
                 .addGap(17, 17, 17))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void btnPantallaImprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPantallaImprimirActionPerformed
+        ConfirmarcionRegistro_imprimirActa imprimirActa = new ConfirmarcionRegistro_imprimirActa();
+        imprimirActa.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnPantallaImprimirActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        RegistroPaciente regsitroPaciente = new RegistroPaciente();
+        regsitroPaciente.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -116,8 +131,8 @@ public class DatosFamiliaresPaciente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnPantallaImprimir;
+    private javax.swing.JButton btnRegresar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables

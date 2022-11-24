@@ -43,6 +43,11 @@ public class ConfirmarcionRegistro_imprimirActa extends javax.swing.JFrame {
         });
 
         btnImprimirActa.setText("Imprimir Acta");
+        btnImprimirActa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnImprimirActaActionPerformed(evt);
+            }
+        });
 
         lblActaIngreso.setText("Pantalla de impresion para el acta de ingreso");
 
@@ -81,6 +86,10 @@ public class ConfirmarcionRegistro_imprimirActa extends javax.swing.JFrame {
         pantallaEmpleado.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnCancelarRegstroActionPerformed
+
+    private void btnImprimirActaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnImprimirActaActionPerformed
+        System.out.println("ImprimiendoActa");
+    }//GEN-LAST:event_btnImprimirActaActionPerformed
 
     /**
      * @param args the command line arguments

@@ -67,6 +67,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Datos Familiar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegistroFamiliarActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
