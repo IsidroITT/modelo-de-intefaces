@@ -1,3 +1,5 @@
+package InterfazEmpleado;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -7,15 +9,13 @@
  *
  * @author katty
  */
-public class PantallaPrincialGerente extends javax.swing.JFrame {
+public class ConfirmarcionRegistro_imprimirActa extends javax.swing.JFrame {
 
     /**
-     * Creates new form PantallaPrincialGerente
+     * Creates new form ConfirmarcionRegistro_imprimirActa
      */
-    public PantallaPrincialGerente() {
+    public ConfirmarcionRegistro_imprimirActa() {
         initComponents();
-         this.setLocationRelativeTo(null);
-        this.setResizable(false);
     }
 
     /**
@@ -27,52 +27,47 @@ public class PantallaPrincialGerente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblPIGerente = new javax.swing.JLabel();
-        btnCerraGerente = new javax.swing.JButton();
+        btnCancelarRegstro = new javax.swing.JButton();
+        btnImprimirActa = new javax.swing.JButton();
+        lblActaIngreso = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblPIGerente.setText("PANTALLA DE INICIO DEL GERENTE");
+        btnCancelarRegstro.setText("Cancelar");
 
-        btnCerraGerente.setText("CERRAR SECION");
-        btnCerraGerente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCerraGerenteActionPerformed(evt);
-            }
-        });
+        btnImprimirActa.setText("Imprimir Acta");
+
+        lblActaIngreso.setText("Pantalla del acta para el acta de ingreso");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(87, 87, 87)
-                        .addComponent(lblPIGerente))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(120, 120, 120)
-                        .addComponent(btnCerraGerente)))
-                .addContainerGap(95, Short.MAX_VALUE))
+                .addGap(27, 27, 27)
+                .addComponent(btnCancelarRegstro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnImprimirActa)
+                .addGap(14, 14, 14))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(81, Short.MAX_VALUE)
+                .addComponent(lblActaIngreso)
+                .addGap(79, 79, 79))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(148, Short.MAX_VALUE)
-                .addComponent(lblPIGerente)
-                .addGap(57, 57, 57)
-                .addComponent(btnCerraGerente)
-                .addGap(51, 51, 51))
+                .addContainerGap(138, Short.MAX_VALUE)
+                .addComponent(lblActaIngreso)
+                .addGap(102, 102, 102)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnCancelarRegstro)
+                    .addComponent(btnImprimirActa))
+                .addGap(16, 16, 16))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnCerraGerenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerraGerenteActionPerformed
-        login log = new login();
-        log.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnCerraGerenteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -91,26 +86,27 @@ public class PantallaPrincialGerente extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PantallaPrincialGerente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ConfirmarcionRegistro_imprimirActa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PantallaPrincialGerente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ConfirmarcionRegistro_imprimirActa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PantallaPrincialGerente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ConfirmarcionRegistro_imprimirActa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PantallaPrincialGerente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ConfirmarcionRegistro_imprimirActa.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PantallaPrincialGerente().setVisible(true);
+                new ConfirmarcionRegistro_imprimirActa().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCerraGerente;
-    private javax.swing.JLabel lblPIGerente;
+    private javax.swing.JButton btnCancelarRegstro;
+    private javax.swing.JButton btnImprimirActa;
+    private javax.swing.JLabel lblActaIngreso;
     // End of variables declaration//GEN-END:variables
 }

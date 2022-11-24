@@ -1,3 +1,7 @@
+package InterfazGerente;
+
+import interfaces.fis.login;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -7,12 +11,12 @@
  *
  * @author katty
  */
-public class PantallaPrincipalEmpleado extends javax.swing.JFrame {
+public class PantallaPrincialGerente extends javax.swing.JFrame {
 
     /**
-     * Creates new form PantallaPrincipalEmpleado
+     * Creates new form PantallaPrincialGerente
      */
-    public PantallaPrincipalEmpleado() {
+    public PantallaPrincialGerente() {
         initComponents();
          this.setLocationRelativeTo(null);
         this.setResizable(false);
@@ -27,17 +31,17 @@ public class PantallaPrincipalEmpleado extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblPIEmpleado = new javax.swing.JLabel();
-        btnCerrarEmpleado = new javax.swing.JButton();
+        lblPIGerente = new javax.swing.JLabel();
+        btnCerraGerente = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblPIEmpleado.setText("PANTALLA DE INICIO DEL EMPELADO");
+        lblPIGerente.setText("PANTALLA DE INICIO DEL GERENTE");
 
-        btnCerrarEmpleado.setText("CERRAR SESION");
-        btnCerrarEmpleado.addActionListener(new java.awt.event.ActionListener() {
+        btnCerraGerente.setText("CERRAR SECION");
+        btnCerraGerente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCerrarEmpleadoActionPerformed(evt);
+                btnCerraGerenteActionPerformed(evt);
             }
         });
 
@@ -45,33 +49,34 @@ public class PantallaPrincipalEmpleado extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(86, Short.MAX_VALUE)
-                .addComponent(lblPIEmpleado)
-                .addGap(82, 82, 82))
             .addGroup(layout.createSequentialGroup()
-                .addGap(146, 146, 146)
-                .addComponent(btnCerrarEmpleado)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(87, 87, 87)
+                        .addComponent(lblPIGerente))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(120, 120, 120)
+                        .addComponent(btnCerraGerente)))
+                .addContainerGap(95, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(136, 136, 136)
-                .addComponent(lblPIEmpleado)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
-                .addComponent(btnCerrarEmpleado)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(148, Short.MAX_VALUE)
+                .addComponent(lblPIGerente)
+                .addGap(57, 57, 57)
+                .addComponent(btnCerraGerente)
                 .addGap(51, 51, 51))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCerrarEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarEmpleadoActionPerformed
+    private void btnCerraGerenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerraGerenteActionPerformed
         login log = new login();
         log.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_btnCerrarEmpleadoActionPerformed
+    }//GEN-LAST:event_btnCerraGerenteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -90,26 +95,26 @@ public class PantallaPrincipalEmpleado extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PantallaPrincipalEmpleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PantallaPrincialGerente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PantallaPrincipalEmpleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PantallaPrincialGerente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PantallaPrincipalEmpleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PantallaPrincialGerente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PantallaPrincipalEmpleado.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PantallaPrincialGerente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PantallaPrincipalEmpleado().setVisible(true);
+                new PantallaPrincialGerente().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCerrarEmpleado;
-    private javax.swing.JLabel lblPIEmpleado;
+    private javax.swing.JButton btnCerraGerente;
+    private javax.swing.JLabel lblPIGerente;
     // End of variables declaration//GEN-END:variables
 }
