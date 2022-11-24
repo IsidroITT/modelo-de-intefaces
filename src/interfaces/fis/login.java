@@ -1,7 +1,7 @@
 package interfaces.fis;
 
 
-import InterfazGerente.PantallaPrincialGerente;
+import InterfazGerente.PantallaPrincipalGerente;
 import InterfazEmpleado.PantallaPrincipalEmpleado;
 
 /*
@@ -34,67 +34,90 @@ public class login extends javax.swing.JFrame {
     private void initComponents() {
 
         lblLogin = new javax.swing.JLabel();
-        btnGerente = new javax.swing.JButton();
         btnEmpleado = new javax.swing.JButton();
+        lblUsuario = new javax.swing.JLabel();
+        txtUsuario = new javax.swing.JTextField();
+        lblContraseña = new javax.swing.JLabel();
+        pwsUsuario = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblLogin.setText("LOGIN");
+        lblLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/usuario_login.png"))); // NOI18N
+        lblLogin.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/usuario_login.png"))); // NOI18N
 
-        btnGerente.setText("INICIO GERENTE");
-        btnGerente.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGerenteActionPerformed(evt);
-            }
-        });
-
-        btnEmpleado.setText("INICIO EMPLEADO");
+        btnEmpleado.setText("INICIAR SECION");
         btnEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEmpleadoActionPerformed(evt);
             }
         });
 
+        lblUsuario.setText("Usuario:");
+
+        lblContraseña.setText("Contraseña:");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(133, 133, 133)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnEmpleado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnGerente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(134, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblLogin)
-                .addGap(182, 182, 182))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(lblUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(lblContraseña))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtUsuario)
+                                    .addComponent(pwsUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(lblLogin)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(98, 98, 98)
+                        .addComponent(btnEmpleado)))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(137, 137, 137)
-                .addComponent(lblLogin)
-                .addGap(18, 18, 18)
-                .addComponent(btnGerente)
+                .addGap(34, 34, 34)
+                .addComponent(lblLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblUsuario)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblContraseña))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(pwsUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(btnEmpleado)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnGerenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGerenteActionPerformed
-        PantallaPrincialGerente pantallaGerente = new PantallaPrincialGerente();
-        pantallaGerente.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnGerenteActionPerformed
-
     private void btnEmpleadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEmpleadoActionPerformed
-        PantallaPrincipalEmpleado pantallaEmpleado = new PantallaPrincipalEmpleado();
-        pantallaEmpleado.setVisible(true);
-        this.dispose();
+        // Obtenemos el valor de la caja de texto
+        String usuario = txtUsuario.getText();
+        // Comparamos el usuario para cada caso, gerente y empleado
+        if(usuario.equalsIgnoreCase("gerente")){
+            // Abrimos la ventana de gerente
+            PantallaPrincipalGerente pantallaGerente = new PantallaPrincipalGerente();
+            pantallaGerente.setVisible(true);
+            this.dispose();
+        }else if(usuario.equals("empleado")){
+            // Abrimos la ventana de empleado
+            PantallaPrincipalEmpleado pantallaGerente = new PantallaPrincipalEmpleado();
+            pantallaGerente.setVisible(true);
+            this.dispose();
+        } else {
+        }
     }//GEN-LAST:event_btnEmpleadoActionPerformed
 
     /**
@@ -134,7 +157,10 @@ public class login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEmpleado;
-    private javax.swing.JButton btnGerente;
+    private javax.swing.JLabel lblContraseña;
     private javax.swing.JLabel lblLogin;
+    private javax.swing.JLabel lblUsuario;
+    private javax.swing.JPasswordField pwsUsuario;
+    private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }

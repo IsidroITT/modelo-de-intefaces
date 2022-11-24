@@ -69,7 +69,7 @@ public class BajaPaciente extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
-        PantallaPrincialGerente pantallaGerente = new PantallaPrincialGerente();
+        PantallaPrincipalGerente pantallaGerente = new PantallaPrincipalGerente();
         pantallaGerente.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnRegresarActionPerformed

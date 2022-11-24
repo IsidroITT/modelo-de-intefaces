@@ -38,6 +38,11 @@ public class RegistroPaciente extends javax.swing.JFrame {
         lblRegistroPacinete.setText("RegistroPaciente");
 
         btnRegrsar.setText("Regresar");
+        btnRegrsar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegrsarActionPerformed(evt);
+            }
+        });
 
         btnRegistroFamiliar.setText("Datos Familiar");
         btnRegistroFamiliar.addActionListener(new java.awt.event.ActionListener() {
@@ -81,6 +86,12 @@ public class RegistroPaciente extends javax.swing.JFrame {
         datosFamiliares.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnRegistroFamiliarActionPerformed
+
+    private void btnRegrsarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegrsarActionPerformed
+        PantallaPrincipalEmpleado pantallaEmpleado = new PantallaPrincipalEmpleado();
+        pantallaEmpleado.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnRegrsarActionPerformed
 
     /**
      * @param args the command line arguments
