@@ -31,6 +31,7 @@ public class PantallaPrincipalEmpleado extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         lblPIEmpleado = new javax.swing.JLabel();
         btnCerrarEmpleado = new javax.swing.JButton();
@@ -38,8 +39,15 @@ public class PantallaPrincipalEmpleado extends javax.swing.JFrame {
         btnActividadesPaciente = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new java.awt.GridBagLayout());
 
         lblPIEmpleado.setText("PANTALLA DE INICIO DEL EMPELADO");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 15, 20);
+        getContentPane().add(lblPIEmpleado, gridBagConstraints);
 
         btnCerrarEmpleado.setText("CERRAR SESION");
         btnCerrarEmpleado.addActionListener(new java.awt.event.ActionListener() {
@@ -47,6 +55,13 @@ public class PantallaPrincipalEmpleado extends javax.swing.JFrame {
                 btnCerrarEmpleadoActionPerformed(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 15, 20);
+        getContentPane().add(btnCerrarEmpleado, gridBagConstraints);
 
         btnRegistroPaciente.setText("Registrar paciente");
         btnRegistroPaciente.addActionListener(new java.awt.event.ActionListener() {
@@ -54,6 +69,13 @@ public class PantallaPrincipalEmpleado extends javax.swing.JFrame {
                 btnRegistroPacienteActionPerformed(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipadx = 81;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 15, 20);
+        getContentPane().add(btnRegistroPaciente, gridBagConstraints);
 
         btnActividadesPaciente.setText("Actividades por paciente");
         btnActividadesPaciente.addActionListener(new java.awt.event.ActionListener() {
@@ -61,40 +83,13 @@ public class PantallaPrincipalEmpleado extends javax.swing.JFrame {
                 btnActividadesPacienteActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(85, Short.MAX_VALUE)
-                .addComponent(lblPIEmpleado)
-                .addGap(83, 83, 83))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(116, 116, 116)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnActividadesPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnRegistroPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnCerrarEmpleado)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(lblPIEmpleado)
-                .addGap(40, 40, 40)
-                .addComponent(btnRegistroPaciente)
-                .addGap(18, 18, 18)
-                .addComponent(btnActividadesPaciente)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, Short.MAX_VALUE)
-                .addComponent(btnCerrarEmpleado)
-                .addContainerGap())
-        );
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipadx = 45;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 15, 20);
+        getContentPane().add(btnActividadesPaciente, gridBagConstraints);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
