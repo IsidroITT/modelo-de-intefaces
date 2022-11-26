@@ -16,15 +16,23 @@ Interfaces para el proyecto FISCRA-2022 V1.0, para la materia Fundamentos de Ing
 - [x] Tabla de actividades del paciente
 - [ ] Revisado
 	**Correcciones**
-	- [ ] Hi!
+	- [ ] Corregir tamaños de las pantallas
+	- [ ] Corregit tamaños de los elementos
 --- 
 
 
 ## Gerente
-- [ ] Pantalla principal
-- [ ] Regsitro de empleado
-- [ ] Seguimiento de pagos
+- [x] Pantalla principal
+- [x] Regsitro de empleado
+- [x] Seguimiento de pagos
 - [ ] Agenda general
 - [ ] Baja paciente
 - [ ] Estudio socio-economico
 - [ ] Editar paciente
+
+### Anotaciones
+- [ ] Agregar pantallas de ingreso de pago
+- [ ] Agregar pantallas de confirmacion
+- [ ] Agregar pantalla de edicion de empleado
+- [ ] Agregar apollos visuales
+- [ ] Agregar pantalla de nueva actividad
