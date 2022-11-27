@@ -15,6 +15,7 @@ Interfaces para el proyecto FISCRA-2022 V1.0, para la materia Fundamentos de Ing
 - [x] Confirmación del registro e impresión del acta
 - [x] Tabla de actividades del paciente
 - [ ] Revisado
+
 	**Correcciones**
 	- [ ] Corregir tamaños de las pantallas
 	- [ ] Corregit tamaños de los elementos
@@ -29,6 +30,8 @@ Interfaces para el proyecto FISCRA-2022 V1.0, para la materia Fundamentos de Ing
 - [ ] Baja paciente
 - [ ] Estudio socio-economico
 - [ ] Editar paciente
+---
+
 
 ### Anotaciones
 - [ ] Agregar pantallas de ingreso de pago
