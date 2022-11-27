@@ -40,9 +40,8 @@ Interfaces para el proyecto FISCRA-2022 V1.0, para la materia Fundamentos de Ing
 ---
 
 **Correcciones**
-
-	- [ ] Corregir tamaños de las pantallas
-	- [ ] Corregit tamaños de los elementos
+- [ ] Corregir tamaños de las pantallas
+- [ ] Corregit tamaños de los elementos
 
 ### Anotaciones
 - [ ] Agregar pantallas de ingreso de pago
