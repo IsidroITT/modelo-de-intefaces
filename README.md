@@ -5,6 +5,18 @@ Interfaces para el proyecto FISCRA-2022 V1.0, para la materia Fundamentos de Ing
 - Equipo 2: FIS
 - Grupo: B
 - Clase: 1-2 pm
+
+#### Flujo de pantallas (segun yo xD)
+1. Gerente -> Registra empleado
+2. Empleado -> Regsitra paciente y familiar
+3. Gerente -> Estudio socio-economico
+4. Empleado -> Asigna actividades al paciente
+5. Empleado -> Consulta actividades del paciente
+6. Gerente -> Consulta actividades generales (pacientes y empleados??)
+7. Gerente -> Edita paciente/familiar paciente
+8. Gerente -> Baja paciente
+
+
 ---
 
 
@@ -14,11 +26,6 @@ Interfaces para el proyecto FISCRA-2022 V1.0, para la materia Fundamentos de Ing
 - [x] Datos familiares
 - [x] Confirmación del registro e impresión del acta
 - [x] Tabla de actividades del paciente
-- [ ] Revisado
-
-	**Correcciones**
-	- [ ] Corregir tamaños de las pantallas
-	- [ ] Corregit tamaños de los elementos
 --- 
 
 
@@ -26,12 +33,15 @@ Interfaces para el proyecto FISCRA-2022 V1.0, para la materia Fundamentos de Ing
 - [x] Pantalla principal
 - [x] Regsitro de empleado
 - [x] Seguimiento de pagos
-- [ ] Agenda general
-- [ ] Baja paciente
+- [x] Agenda general
+- [x] Baja paciente
 - [ ] Estudio socio-economico
-- [ ] Editar paciente
+- [x] Editar paciente
 ---
 
+**Correcciones**
+	- [ ] Corregir tamaños de las pantallas
+	- [ ] Corregit tamaños de los elementos
 
 ### Anotaciones
 - [ ] Agregar pantallas de ingreso de pago
@@ -39,3 +49,5 @@ Interfaces para el proyecto FISCRA-2022 V1.0, para la materia Fundamentos de Ing
 - [ ] Agregar pantalla de edicion de empleado
 - [ ] Agregar apollos visuales
 - [ ] Agregar pantalla de nueva actividad
+- [ ] Agregar baja de empleados
+- [ ] Agregar pantalla 'acta de egreso'

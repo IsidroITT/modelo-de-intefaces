@@ -29,19 +29,52 @@ public class EditarPaciente extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        jLabel1 = new javax.swing.JLabel();
+        lblPantallaEditarPaciente = new javax.swing.JLabel();
         btnRegresar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        intfraInfoPaciente = new javax.swing.JInternalFrame();
+        lblDireccion1 = new javax.swing.JLabel();
+        txtDireccion1 = new javax.swing.JTextField();
+        lblTelefono1 = new javax.swing.JLabel();
+        lblEdad1 = new javax.swing.JLabel();
+        txtTelefono1 = new javax.swing.JTextField();
+        txtEdad1 = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        txtareaObservacioes1 = new javax.swing.JTextArea();
+        lblObservaciones1 = new javax.swing.JLabel();
+        cbxMedicamentos1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jSeparator2 = new javax.swing.JSeparator();
+        intfraInfoFamiliar = new javax.swing.JInternalFrame();
+        lblDireccion2 = new javax.swing.JLabel();
+        txtDireccion2 = new javax.swing.JTextField();
+        lblTelefono2 = new javax.swing.JLabel();
+        txtTelefono2 = new javax.swing.JTextField();
+        cbxMedicamentos2 = new javax.swing.JCheckBox();
+        jCheckBox3 = new javax.swing.JCheckBox();
+        jLabel4 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
-        jLabel1.setText("Pantalla editar paciente");
+        lblPantallaEditarPaciente.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
+        lblPantallaEditarPaciente.setText("Editar informacion del paciente");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(32, 22, 0, 135);
-        getContentPane().add(jLabel1, gridBagConstraints);
+        gridBagConstraints.gridwidth = 11;
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 20, 10);
+        getContentPane().add(lblPantallaEditarPaciente, gridBagConstraints);
 
         btnRegresar.setText("Regresar");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
@@ -51,10 +84,240 @@ public class EditarPaciente extends javax.swing.JFrame {
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridy = 18;
+        gridBagConstraints.gridwidth = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(218, 6, 6, 0);
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 20, 10);
         getContentPane().add(btnRegresar, gridBagConstraints);
+
+        jLabel1.setText("Nombre:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 20, 10);
+        getContentPane().add(jLabel1, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 7;
+        gridBagConstraints.ipadx = 700;
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 20, 10);
+        getContentPane().add(jTextField1, gridBagConstraints);
+
+        jButton1.setText("Buscar");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 20, 10);
+        getContentPane().add(jButton1, gridBagConstraints);
+
+        jButton2.setText("Guardar cambios");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 18;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 20, 10);
+        getContentPane().add(jButton2, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 9;
+        gridBagConstraints.ipadx = 250;
+        getContentPane().add(jSeparator1, gridBagConstraints);
+
+        intfraInfoPaciente.setVisible(true);
+        intfraInfoPaciente.getContentPane().setLayout(new java.awt.GridBagLayout());
+
+        lblDireccion1.setText("Direccion:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoPaciente.getContentPane().add(lblDireccion1, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 75;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoPaciente.getContentPane().add(txtDireccion1, gridBagConstraints);
+
+        lblTelefono1.setText("Telefono:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoPaciente.getContentPane().add(lblTelefono1, gridBagConstraints);
+
+        lblEdad1.setText("Edad:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoPaciente.getContentPane().add(lblEdad1, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.ipadx = 75;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoPaciente.getContentPane().add(txtTelefono1, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.ipadx = 75;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoPaciente.getContentPane().add(txtEdad1, gridBagConstraints);
+
+        txtareaObservacioes1.setColumns(20);
+        txtareaObservacioes1.setRows(5);
+        txtareaObservacioes1.setText("Especificar nuevos medicamientos:");
+        jScrollPane2.setViewportView(txtareaObservacioes1);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 11;
+        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 280;
+        gridBagConstraints.ipady = 85;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 15);
+        intfraInfoPaciente.getContentPane().add(jScrollPane2, gridBagConstraints);
+
+        lblObservaciones1.setText("Observaciones de regsitro:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoPaciente.getContentPane().add(lblObservaciones1, gridBagConstraints);
+
+        cbxMedicamentos1.setText("Nuevos medicamentos");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.ipadx = 70;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 15, 20);
+        intfraInfoPaciente.getContentPane().add(cbxMedicamentos1, gridBagConstraints);
+
+        jCheckBox2.setText("Nuevas alergias");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoPaciente.getContentPane().add(jCheckBox2, gridBagConstraints);
+
+        jLabel3.setText("Etapa:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 1;
+        intfraInfoPaciente.getContentPane().add(jLabel3, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 70;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoPaciente.getContentPane().add(jTextField3, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 12;
+        gridBagConstraints.gridwidth = 10;
+        intfraInfoPaciente.getContentPane().add(jSeparator2, gridBagConstraints);
+
+        jTabbedPane1.addTab("Informacion del paciente", intfraInfoPaciente);
+
+        intfraInfoFamiliar.setVisible(true);
+        intfraInfoFamiliar.getContentPane().setLayout(new java.awt.GridBagLayout());
+
+        lblDireccion2.setText("Direccion:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoFamiliar.getContentPane().add(lblDireccion2, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 75;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoFamiliar.getContentPane().add(txtDireccion2, gridBagConstraints);
+
+        lblTelefono2.setText("Telefono 1:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoFamiliar.getContentPane().add(lblTelefono2, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.ipadx = 75;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoFamiliar.getContentPane().add(txtTelefono2, gridBagConstraints);
+
+        cbxMedicamentos2.setText("Nuevos medicamentos");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.ipadx = 70;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 15, 20);
+        intfraInfoFamiliar.getContentPane().add(cbxMedicamentos2, gridBagConstraints);
+
+        jCheckBox3.setText("Nuevas alergias");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoFamiliar.getContentPane().add(jCheckBox3, gridBagConstraints);
+
+        jLabel4.setText("Etapa:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoFamiliar.getContentPane().add(jLabel4, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 75;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoFamiliar.getContentPane().add(jTextField4, gridBagConstraints);
+
+        jLabel2.setText("Telefono 2:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoFamiliar.getContentPane().add(jLabel2, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.ipadx = 75;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
+        intfraInfoFamiliar.getContentPane().add(jTextField2, gridBagConstraints);
+
+        jTabbedPane1.addTab("Informacion del familiar", intfraInfoFamiliar);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 7;
+        gridBagConstraints.gridheight = 13;
+        gridBagConstraints.ipadx = 250;
+        gridBagConstraints.ipady = 200;
+        getContentPane().add(jTabbedPane1, gridBagConstraints);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -102,6 +365,38 @@ public class EditarPaciente extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnRegresar;
+    private javax.swing.JCheckBox cbxMedicamentos1;
+    private javax.swing.JCheckBox cbxMedicamentos2;
+    private javax.swing.JInternalFrame intfraInfoFamiliar;
+    private javax.swing.JInternalFrame intfraInfoPaciente;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JCheckBox jCheckBox2;
+    private javax.swing.JCheckBox jCheckBox3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JLabel lblDireccion1;
+    private javax.swing.JLabel lblDireccion2;
+    private javax.swing.JLabel lblEdad1;
+    private javax.swing.JLabel lblObservaciones1;
+    private javax.swing.JLabel lblPantallaEditarPaciente;
+    private javax.swing.JLabel lblTelefono1;
+    private javax.swing.JLabel lblTelefono2;
+    private javax.swing.JTextField txtDireccion1;
+    private javax.swing.JTextField txtDireccion2;
+    private javax.swing.JTextField txtEdad1;
+    private javax.swing.JTextField txtTelefono1;
+    private javax.swing.JTextField txtTelefono2;
+    private javax.swing.JTextArea txtareaObservacioes1;
     // End of variables declaration//GEN-END:variables
 }

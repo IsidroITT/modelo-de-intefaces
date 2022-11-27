@@ -31,16 +31,24 @@ public class BajaPaciente extends javax.swing.JFrame {
 
         lblBajaPaciente = new javax.swing.JLabel();
         btnRegresar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
-        lblBajaPaciente.setText("Pantalla de baja paciente");
+        lblBajaPaciente.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
+        lblBajaPaciente.setText("Baja paciente");
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(39, 29, 0, 120);
+        gridBagConstraints.gridwidth = 10;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
         getContentPane().add(lblBajaPaciente, gridBagConstraints);
 
         btnRegresar.setText("Regresar");
@@ -51,10 +59,60 @@ public class BajaPaciente extends javax.swing.JFrame {
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(211, 6, 6, 0);
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 10, 20);
         getContentPane().add(btnRegresar, gridBagConstraints);
+
+        jLabel1.setText("Nombre:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 20, 10);
+        getContentPane().add(jLabel1, gridBagConstraints);
+
+        jButton1.setText("Buscar");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 20, 10);
+        getContentPane().add(jButton1, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.ipadx = 220;
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 20, 10);
+        getContentPane().add(jTextField1, gridBagConstraints);
+
+        jLabel2.setText("Motivos de baja");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 20, 10);
+        getContentPane().add(jLabel2, gridBagConstraints);
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 350;
+        gridBagConstraints.ipady = 300;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 20, 10);
+        getContentPane().add(jScrollPane1, gridBagConstraints);
+
+        jButton2.setText("Imprimir acta de egreso");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 20, 10);
+        getContentPane().add(jButton2, gridBagConstraints);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -102,6 +160,13 @@ public class BajaPaciente extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnRegresar;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblBajaPaciente;
     // End of variables declaration//GEN-END:variables
 }
