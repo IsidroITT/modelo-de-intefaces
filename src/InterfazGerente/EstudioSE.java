@@ -33,7 +33,32 @@ public class EstudioSE extends javax.swing.JFrame {
         btnRegresar = new javax.swing.JButton();
         VentanasEstudioSE = new javax.swing.JTabbedPane();
         intfraInfoBasica = new javax.swing.JInternalFrame();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        jLabel6 = new javax.swing.JLabel();
+        jCheckBox3 = new javax.swing.JCheckBox();
+        jCheckBox4 = new javax.swing.JCheckBox();
+        jCheckBox5 = new javax.swing.JCheckBox();
+        jCheckBox6 = new javax.swing.JCheckBox();
+        jCheckBox7 = new javax.swing.JCheckBox();
+        jTextField6 = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel8 = new javax.swing.JLabel();
         intfraHogar = new javax.swing.JInternalFrame();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblIntegrantesHogar = new javax.swing.JTable();
         intfraGastosServicios = new javax.swing.JInternalFrame();
         intfraSalud = new javax.swing.JInternalFrame();
 
@@ -63,10 +88,177 @@ public class EstudioSE extends javax.swing.JFrame {
 
         intfraInfoBasica.setVisible(true);
         intfraInfoBasica.getContentPane().setLayout(new java.awt.GridBagLayout());
+
+        jLabel1.setText("jLabel1");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        intfraInfoBasica.getContentPane().add(jLabel1, gridBagConstraints);
+
+        jTextField1.setText("jTextField1");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 3;
+        intfraInfoBasica.getContentPane().add(jTextField1, gridBagConstraints);
+
+        jLabel2.setText("jLabel1");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 0;
+        intfraInfoBasica.getContentPane().add(jLabel2, gridBagConstraints);
+
+        jTextField2.setText("jTextField1");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 3;
+        intfraInfoBasica.getContentPane().add(jTextField2, gridBagConstraints);
+
+        jLabel3.setText("jLabel1");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        intfraInfoBasica.getContentPane().add(jLabel3, gridBagConstraints);
+
+        jTextField3.setText("jTextField1");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 3;
+        intfraInfoBasica.getContentPane().add(jTextField3, gridBagConstraints);
+
+        jLabel4.setText("jLabel4");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        intfraInfoBasica.getContentPane().add(jLabel4, gridBagConstraints);
+
+        jTextField4.setText("jTextField4");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 3;
+        intfraInfoBasica.getContentPane().add(jTextField4, gridBagConstraints);
+
+        jLabel5.setText("jLabel5");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 3;
+        intfraInfoBasica.getContentPane().add(jLabel5, gridBagConstraints);
+
+        jTextField5.setText("jTextField5");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 3;
+        intfraInfoBasica.getContentPane().add(jTextField5, gridBagConstraints);
+
+        jCheckBox1.setText("jCheckBox1");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 4;
+        intfraInfoBasica.getContentPane().add(jCheckBox1, gridBagConstraints);
+
+        jCheckBox2.setText("jCheckBox2");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 5;
+        intfraInfoBasica.getContentPane().add(jCheckBox2, gridBagConstraints);
+
+        jLabel6.setText("jLabel6");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 3;
+        intfraInfoBasica.getContentPane().add(jLabel6, gridBagConstraints);
+
+        jCheckBox3.setText("jCheckBox3");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 6;
+        intfraInfoBasica.getContentPane().add(jCheckBox3, gridBagConstraints);
+
+        jCheckBox4.setText("jCheckBox4");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 8;
+        gridBagConstraints.gridy = 7;
+        intfraInfoBasica.getContentPane().add(jCheckBox4, gridBagConstraints);
+
+        jCheckBox5.setText("jCheckBox5");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 4;
+        intfraInfoBasica.getContentPane().add(jCheckBox5, gridBagConstraints);
+
+        jCheckBox6.setText("jCheckBox6");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 5;
+        intfraInfoBasica.getContentPane().add(jCheckBox6, gridBagConstraints);
+
+        jCheckBox7.setText("jCheckBox7");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 6;
+        intfraInfoBasica.getContentPane().add(jCheckBox7, gridBagConstraints);
+
+        jTextField6.setText("jTextField6");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 7;
+        intfraInfoBasica.getContentPane().add(jTextField6, gridBagConstraints);
+
+        jLabel7.setText("jLabel7");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 6;
+        intfraInfoBasica.getContentPane().add(jLabel7, gridBagConstraints);
+
+        jTextField7.setText("jTextField7");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.gridwidth = 3;
+        intfraInfoBasica.getContentPane().add(jTextField7, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.gridwidth = 11;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        intfraInfoBasica.getContentPane().add(jSeparator1, gridBagConstraints);
+
+        jLabel8.setText("jLabel8");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 9;
+        intfraInfoBasica.getContentPane().add(jLabel8, gridBagConstraints);
+
         VentanasEstudioSE.addTab("Informacion basica", intfraInfoBasica);
 
         intfraHogar.setVisible(true);
         intfraHogar.getContentPane().setLayout(new java.awt.GridBagLayout());
+
+        tblIntegrantesHogar.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "Nombre completo", "Edad", "Fecha de nacimiento", "Parentesco", "Escolaridad", "Servicio medico", "Ocupacion", "Ingreso mensual"
+            }
+        ));
+        jScrollPane1.setViewportView(tblIntegrantesHogar);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.ipadx = 250;
+        gridBagConstraints.ipady = 200;
+        intfraHogar.getContentPane().add(jScrollPane1, gridBagConstraints);
+
         VentanasEstudioSE.addTab("Integrantes del hogar", intfraHogar);
 
         intfraGastosServicios.setVisible(true);
@@ -137,6 +329,31 @@ public class EstudioSE extends javax.swing.JFrame {
     private javax.swing.JInternalFrame intfraHogar;
     private javax.swing.JInternalFrame intfraInfoBasica;
     private javax.swing.JInternalFrame intfraSalud;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox2;
+    private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.JCheckBox jCheckBox4;
+    private javax.swing.JCheckBox jCheckBox5;
+    private javax.swing.JCheckBox jCheckBox6;
+    private javax.swing.JCheckBox jCheckBox7;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
     private javax.swing.JLabel lblEstudioSE;
+    private javax.swing.JTable tblIntegrantesHogar;
     // End of variables declaration//GEN-END:variables
 }
