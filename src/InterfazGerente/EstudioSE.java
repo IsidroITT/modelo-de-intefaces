@@ -31,11 +31,11 @@ public class EstudioSE extends javax.swing.JFrame {
 
         lblEstudioSE = new javax.swing.JLabel();
         btnRegresar = new javax.swing.JButton();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
-        jInternalFrame1 = new javax.swing.JInternalFrame();
-        jInternalFrame2 = new javax.swing.JInternalFrame();
-        jInternalFrame3 = new javax.swing.JInternalFrame();
-        jInternalFrame4 = new javax.swing.JInternalFrame();
+        VentanasEstudioSE = new javax.swing.JTabbedPane();
+        intfraInfoBasica = new javax.swing.JInternalFrame();
+        intfraHogar = new javax.swing.JInternalFrame();
+        intfraGastosServicios = new javax.swing.JInternalFrame();
+        intfraSalud = new javax.swing.JInternalFrame();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.GridBagLayout());
@@ -44,9 +44,8 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(35, 81, 0, 114);
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 20, 10);
         getContentPane().add(lblEstudioSE, gridBagConstraints);
 
         btnRegresar.setText("Regresar");
@@ -57,72 +56,35 @@ public class EstudioSE extends javax.swing.JFrame {
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(215, 6, 6, 0);
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.insets = new java.awt.Insets(15, 10, 20, 10);
         getContentPane().add(btnRegresar, gridBagConstraints);
 
-        jInternalFrame1.setVisible(true);
+        intfraInfoBasica.setVisible(true);
+        intfraInfoBasica.getContentPane().setLayout(new java.awt.GridBagLayout());
+        VentanasEstudioSE.addTab("Informacion basica", intfraInfoBasica);
 
-        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
-        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
-        jInternalFrame1Layout.setHorizontalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jInternalFrame1Layout.setVerticalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        intfraHogar.setVisible(true);
+        intfraHogar.getContentPane().setLayout(new java.awt.GridBagLayout());
+        VentanasEstudioSE.addTab("Integrantes del hogar", intfraHogar);
 
-        jTabbedPane1.addTab("Informacion basica", jInternalFrame1);
+        intfraGastosServicios.setVisible(true);
+        intfraGastosServicios.getContentPane().setLayout(new java.awt.GridBagLayout());
+        VentanasEstudioSE.addTab("Gastos y servicios", intfraGastosServicios);
 
-        jInternalFrame2.setVisible(true);
+        intfraSalud.setVisible(true);
+        intfraSalud.getContentPane().setLayout(new java.awt.GridBagLayout());
+        VentanasEstudioSE.addTab("Salud", intfraSalud);
 
-        javax.swing.GroupLayout jInternalFrame2Layout = new javax.swing.GroupLayout(jInternalFrame2.getContentPane());
-        jInternalFrame2.getContentPane().setLayout(jInternalFrame2Layout);
-        jInternalFrame2Layout.setHorizontalGroup(
-            jInternalFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jInternalFrame2Layout.setVerticalGroup(
-            jInternalFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("Integrantes del hogar", jInternalFrame2);
-
-        jInternalFrame3.setVisible(true);
-
-        javax.swing.GroupLayout jInternalFrame3Layout = new javax.swing.GroupLayout(jInternalFrame3.getContentPane());
-        jInternalFrame3.getContentPane().setLayout(jInternalFrame3Layout);
-        jInternalFrame3Layout.setHorizontalGroup(
-            jInternalFrame3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jInternalFrame3Layout.setVerticalGroup(
-            jInternalFrame3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("Gastos y servicios", jInternalFrame3);
-
-        jInternalFrame4.setVisible(true);
-
-        javax.swing.GroupLayout jInternalFrame4Layout = new javax.swing.GroupLayout(jInternalFrame4.getContentPane());
-        jInternalFrame4.getContentPane().setLayout(jInternalFrame4Layout);
-        jInternalFrame4Layout.setHorizontalGroup(
-            jInternalFrame4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jInternalFrame4Layout.setVerticalGroup(
-            jInternalFrame4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("Salud", jInternalFrame4);
-
-        getContentPane().add(jTabbedPane1, new java.awt.GridBagConstraints());
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 350;
+        gridBagConstraints.ipady = 200;
+        getContentPane().add(VentanasEstudioSE, gridBagConstraints);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -169,12 +131,12 @@ public class EstudioSE extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTabbedPane VentanasEstudioSE;
     private javax.swing.JButton btnRegresar;
-    private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JInternalFrame jInternalFrame2;
-    private javax.swing.JInternalFrame jInternalFrame3;
-    private javax.swing.JInternalFrame jInternalFrame4;
-    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JInternalFrame intfraGastosServicios;
+    private javax.swing.JInternalFrame intfraHogar;
+    private javax.swing.JInternalFrame intfraInfoBasica;
+    private javax.swing.JInternalFrame intfraSalud;
     private javax.swing.JLabel lblEstudioSE;
     // End of variables declaration//GEN-END:variables
 }
