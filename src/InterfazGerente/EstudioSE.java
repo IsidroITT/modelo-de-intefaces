@@ -263,6 +263,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField1, gridBagConstraints);
 
         jLabel2.setText("Apellido materno");
@@ -274,6 +275,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 8;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField2, gridBagConstraints);
 
         jLabel3.setText("Nombre:");
@@ -285,6 +287,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField3, gridBagConstraints);
 
         jLabel4.setText("Lugar de nacimiento");
@@ -296,6 +299,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
         gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField4, gridBagConstraints);
 
         jLabel5.setText("Fecha de nacimiento");
@@ -307,6 +311,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 4;
         gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField5, gridBagConstraints);
 
         jCheckBox1.setText("Primaria");
@@ -364,6 +369,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 9;
         gridBagConstraints.gridy = 7;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField6, gridBagConstraints);
 
         jLabel7.setText("Edad");
@@ -375,6 +381,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 7;
         gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField7, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -398,6 +405,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 11;
         gridBagConstraints.gridwidth = 7;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField18, gridBagConstraints);
 
         jLabel22.setText("No. Exterior");
@@ -409,6 +417,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 8;
         gridBagConstraints.gridy = 11;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField19, gridBagConstraints);
 
         jLabel23.setText("Colonia");
@@ -420,6 +429,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 14;
         gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField20, gridBagConstraints);
 
         jLabel24.setText("C.P.");
@@ -432,6 +442,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 14;
         gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField21, gridBagConstraints);
 
         jLabel25.setText("Seccion");
@@ -443,6 +454,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 8;
         gridBagConstraints.gridy = 14;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField22, gridBagConstraints);
 
         jLabel26.setText("Localidad");
@@ -454,6 +466,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 17;
         gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField23, gridBagConstraints);
 
         jLabel27.setText("Entre calles");
@@ -465,6 +478,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 17;
         gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField24, gridBagConstraints);
 
         jLabel28.setText("Telefono");
@@ -476,6 +490,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 8;
         gridBagConstraints.gridy = 17;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField25, gridBagConstraints);
 
         jLabel35.setText("CURP");
@@ -486,6 +501,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 7;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraInfoBasica.getContentPane().add(jTextField26, gridBagConstraints);
 
         jLabel29.setText("Es cabeza de familia");
@@ -521,6 +537,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipadx = 250;
         gridBagConstraints.ipady = 200;
         intfraHogar.getContentPane().add(jScrollPane1, gridBagConstraints);
@@ -671,7 +688,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridy = 3;
         gridBagConstraints.gridwidth = 7;
         gridBagConstraints.gridheight = 2;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         intfraGastosServicios.getContentPane().add(jScrollPane2, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -1288,6 +1305,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 21;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraInfoHogar.getContentPane().add(jTextField27, gridBagConstraints);
 
@@ -1321,6 +1339,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 15;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraInfoHogar.getContentPane().add(jTextField28, gridBagConstraints);
 
@@ -1361,6 +1380,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 16;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraInfoHogar.getContentPane().add(jTextField29, gridBagConstraints);
 
@@ -1433,6 +1453,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 9;
         gridBagConstraints.gridy = 16;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraInfoHogar.getContentPane().add(jTextField30, gridBagConstraints);
 
