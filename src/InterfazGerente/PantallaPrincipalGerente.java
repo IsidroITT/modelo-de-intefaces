@@ -129,7 +129,7 @@ public class PantallaPrincipalGerente extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(15, 10, 15, 20);
         getContentPane().add(btnBajaPaciente, gridBagConstraints);
 
-        btnAgendaGeneral.setText("Agenda general");
+        btnAgendaGeneral.setText("Administrar visitas");
         btnAgendaGeneral.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAgendaGeneralActionPerformed(evt);

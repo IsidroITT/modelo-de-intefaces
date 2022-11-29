@@ -763,6 +763,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox14, gridBagConstraints);
 
         jCheckBox15.setText("Quemaduras");
@@ -770,6 +771,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 5;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox15, gridBagConstraints);
 
         jCheckBox16.setText("Epilepsia");
@@ -777,6 +779,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 6;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox16, gridBagConstraints);
 
         jCheckBox17.setText("Hipertensión");
@@ -784,6 +787,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 4;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox17, gridBagConstraints);
 
         jCheckBox18.setText("Presión baja");
@@ -791,6 +795,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 5;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox18, gridBagConstraints);
 
         jCheckBox19.setText("Discapacidad");
@@ -798,6 +803,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 6;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox19, gridBagConstraints);
 
         jCheckBox20.setText("Cardíacos");
@@ -805,6 +811,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 4;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox20, gridBagConstraints);
 
         jCheckBox21.setText("Estrabismo");
@@ -812,6 +819,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 5;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox21, gridBagConstraints);
 
         jCheckBox22.setText("Renales");
@@ -824,6 +832,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 6;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox22, gridBagConstraints);
 
         jCheckBox23.setText("Alergias");
@@ -836,6 +845,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 9;
         gridBagConstraints.gridy = 4;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox23, gridBagConstraints);
 
         jCheckBox24.setText("Paladar hendido");
@@ -843,6 +853,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 9;
         gridBagConstraints.gridy = 5;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox24, gridBagConstraints);
 
         jCheckBox25.setText("Cardiopatías");
@@ -850,6 +861,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 9;
         gridBagConstraints.gridy = 6;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox25, gridBagConstraints);
 
         jCheckBox26.setText("Diabetes");
@@ -857,6 +869,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 12;
         gridBagConstraints.gridy = 4;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox26, gridBagConstraints);
 
         jCheckBox27.setText("Alzheimer");
@@ -864,6 +877,7 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridx = 12;
         gridBagConstraints.gridy = 5;
         gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         intfraSalud.getContentPane().add(jCheckBox27, gridBagConstraints);
 
         jCheckBox28.setText("Otro:");
@@ -1534,8 +1548,6 @@ public class EstudioSE extends javax.swing.JFrame {
         gridBagConstraints.gridy = 1;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.gridheight = 2;
-        gridBagConstraints.ipadx = 350;
-        gridBagConstraints.ipady = 200;
         getContentPane().add(VentanasEstudioSE, gridBagConstraints);
 
         pack();

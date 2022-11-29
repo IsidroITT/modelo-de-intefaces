@@ -86,7 +86,7 @@ public class AgendaGeneral extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(15, 10, 15, 20);
         getContentPane().add(jScrollPane1, gridBagConstraints);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Nueva visita");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 5;
