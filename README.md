@@ -42,16 +42,12 @@ Interfaces para el proyecto FISCRA-2022 V1.0, para la materia Fundamentos de Ing
 - [x] Editar paciente
 ---
 
-**Correcciones**
-- [ ] Corregir tamaños de las pantallas
-- [ ] Corregit tamaños de los elementos
 
 ### Anotaciones
-- [ ] Pan
-- [ ] Agregar pantallas de ingreso de pago
+- [x] Agregar pantallas de ingreso de pago
 - [ ] Agregar pantallas de confirmacion
-- [ ] Agregar pantalla de edicion de empleado
-- [ ] Agregar apollos visuales
-- [ ] Agregar pantalla de nueva actividad
-- [ ] Agregar baja de empleados
-- [ ] Agregar pantalla 'acta de egreso'
+- [x] Agregar pantalla de edicion de empleado
+- [x] Agregar apollos visuales
+- [x] Agregar pantalla de nueva actividad
+- [x] Agregar baja de empleados
+- [x] Agregar pantalla 'acta de egreso'
